@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prakhi Asati | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => {
+    section.classList.add("hidden");
+    observer.observe(section);
+  });
+</script>
+
+<body>
+
+  <!-- HERO / INTRODUCTION -->
+  <header>
+    <h1>Prakhi Asati</h1>
+    <p class="tagline">
+      Cybersecurity Student | Ethical Hacking Enthusiast | Software Developer
+    </p>
+
+    <div class="links">
+  <a href="mailto:prakhi06032005@gmail.com">
+    <i class="fas fa-envelope"></i> Email
+  </a>
+  <a href="tel:+919302018251">
+    <i class="fas fa-phone"></i> Phone
+  </a>
+  <a href="https://www.linkedin.com/in/prakhi-asati-834a8b3aa/" target="_blank">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://github.com/Perfectopro" target="_blank">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+  <a href="resume.pdf" download>
+    <i class="fas fa-file-download"></i> Resume
+  </a>
+</div>
+
+  </header>
+
+  <!-- INTRODUCTION & SUMMARY -->
+  <section>
+    <h2>Introduction & Professional Summary</h2>
+    <p>
+      I am a Computer Science and Engineering undergraduate specializing in cybersecurity concepts,
+      ethical hacking practices, and secure software development. My academic training, combined with
+      hands-on technical projects and cybersecurity labs, has enabled me to understand how systems
+      are designed, attacked, and defended in real-world environments.
+    </p>
+    <p>
+      I am passionate about continuous learning and aim to build a responsible career in cybersecurity
+      by applying ethical principles, technical expertise, and analytical thinking to protect digital
+      infrastructure.
+    </p>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      Currently pursuing B.Tech in Computer Science and Engineering at Lovely Professional University,
+      I actively explore cybersecurity platforms such as TryHackMe, HackTheBox, and PicoCTF to gain
+      practical exposure. I enjoy working on security-focused tools and projects that enhance my
+      understanding of networks, system vulnerabilities, and defensive strategies.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+  <h2>Skills & Technologies</h2>
+
+  <div class="skill-block">
+    <h3>Programming & Scripting</h3>
+    <p>
+      Python, C, C++, Java, Basic Shell Scripting
+    </p>
+  </div>
+
+  <div class="skill-block">
+    <h3>Cybersecurity Domains</h3>
+    <p>
+      Network Security, Ethical Hacking Fundamentals, Vulnerability Assessment,
+      Security Monitoring, Secure Authentication Concepts
+    </p>
+  </div>
+
+  <div class="skill-block">
+    <h3>Security & Networking Tools</h3>
+    <p>
+      Nmap, Wireshark, Angry IP Scanner, Basic Penetration Testing Tools,
+      Packet Analysis Utilities
+    </p>
+  </div>
+
+  <div class="skill-block">
+    <h3>Networking Knowledge</h3>
+    <p>
+      TCP/IP Protocol Suite, OSI Model, DNS, HTTP/HTTPS,
+      Port Scanning Concepts, Network Traffic Analysis
+    </p>
+  </div>
+
+  <div class="skill-block">
+    <h3>Web & Development Technologies</h3>
+    <p>
+      HTML, CSS, ReactJS, ExpressJS, Secure Web Development Basics
+    </p>
+  </div>
+
+  <div class="skill-block">
+    <h3>Database & System Knowledge</h3>
+    <p>
+      MySQL, Operating System Fundamentals (Windows & Linux Basics),
+      File Permissions and Access Control
+    </p>
+  </div>
+
+  <div class="skill-block">
+    <h3>Professional & Ethical Skills</h3>
+    <p>
+      Analytical Thinking, Problem Solving, Ethical Responsibility,
+      Continuous Learning, Technical Documentation
+    </p>
+  </div>
+
+</section>
+
+<section>
+  <h2>Cybersecurity Learning Journey</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span>2023</span>
+      <p>Started B.Tech CSE and core programming fundamentals</p>
+    </div>
+
+    <div class="timeline-item">
+      <span>2024</span>
+      <p>Focused on networking, cybersecurity courses, and hands-on labs</p>
+    </div>
+
+    <div class="timeline-item">
+      <span>2025</span>
+      <p>Built security-focused projects, GitHub portfolio, and CTF exposure</p>
+    </div>
+  </div>
+</section>
+
+  <!-- PROJECTS -->
+  <section>
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Network Vulnerability Scanning Tool</h3>
+    <p class="tech">Python | Networking | Cybersecurity</p>
+    <p>
+      Designed and implemented a basic network vulnerability scanning tool to identify
+      active hosts and open ports within a given network range. The project focuses on
+      understanding common network exposure points and reconnaissance techniques used
+      during security assessments.
+    </p>
+    <p>
+      This project enhanced my knowledge of TCP/IP protocols, port states, and ethical
+      vulnerability discovery practices while emphasizing responsible security testing.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Password Security Analysis System</h3>
+    <p class="tech">Python | Security Analysis</p>
+    <p>
+      Developed a password security analysis system that evaluates passwords based on
+      length, complexity, entropy, and resistance to common attack patterns. The system
+      helps users understand secure authentication practices and the importance of strong
+      credential management.
+    </p>
+    <p>
+      Through this project, I gained deeper insight into authentication vulnerabilities
+      and defensive security strategies used to prevent credential-based attacks.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Network Traffic Analysis Using Wireshark</h3>
+    <p class="tech">Wireshark | Network Protocols | Security Monitoring</p>
+    <p>
+      Conducted detailed network traffic analysis using Wireshark to study packet flow,
+      protocol behavior, and potential security anomalies within a controlled environment.
+      The project involved capturing and analyzing HTTP, TCP, UDP, and DNS traffic.
+    </p>
+    <p>
+      This work strengthened my understanding of network monitoring, intrusion indicators,
+      and how abnormal traffic patterns can signal potential security threats.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Cybersecurity Awareness and Best Practices Website</h3>
+    <p class="tech">HTML | CSS | Cybersecurity Fundamentals</p>
+    <p>
+      Created an informational website aimed at educating users about common cyber threats
+      such as phishing, malware, weak passwords, and social engineering attacks. The site
+      presents practical prevention techniques and security best practices.
+    </p>
+    <p>
+      This project improved my ability to communicate technical security concepts clearly
+      while promoting ethical awareness and responsible digital behavior.
+    </p>
+  </div>
+
+</section>
+
+
+
+  <!-- CERTIFICATIONS -->
+  <section>
+  <h2>Certificates & Courses</h2>
+
+  <ul>
+    <li>
+      TCP/IP and Advanced Topics – Coursera (University of Colorado)  
+      (<a href="TCP IP and Advanced topics.pdf" target="_blank">View Certificate</a>)
+    </li>
+
+    <li>
+      The Bits and Bytes of Computer Networks – Coursera (Google)  
+      (<a href="The Bits and Bytes of computer networks.pdf" target="_blank">View Certificate</a>)
+    </li>
+
+    <li>
+      Peer-to-Peer Protocols and Local Area Networks – Coursera  
+      (<a href="Peer-to-peer protocol and local area networks.pdf" target="_blank">View Certificate</a>)
+    </li>
+
+    <li>
+      Fundamentals of Network Communication – Coursera  
+      (<a href="fundamentals of network communication.pdf" target="_blank">View Certificate</a>)
+    </li>
+
+    <li>
+      Introduction to Hardware and Operating Systems – Coursera (IBM)  
+      (<a href="Introduction to hardware and operating Systems.pdf" target="_blank">View Certificate</a>)
+    </li>
+
+    <li>
+      Computer Communications Specialization – Coursera  
+      (<a href="Computer Communications.pdf" target="_blank">View Certificate</a>)
+    </li>
+
+    <li>
+      Computational Theory: Language Principles & Finite Automata  
+      (<a href="Computational Theory.pdf" target="_blank">View Certificate</a>)
+    </li>
+  </ul>
+</section>
+
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Experience (Practical & Lab-Based)</h2>
+    <ul>
+      <li>Completed TryHackMe – Intro to Cybersecurity & SOC Level 1 labs</li>
+      <li>Completed HackTheBox – Starting Point track</li>
+      <li>Hands-on exposure to ethical hacking methodologies and security analysis</li>
+    </ul>
+  </section>
+
+  <!-- COMPETITIVE PROGRAMMING -->
+  <section>
+    <h2>Competitive Programming & Hackathons</h2>
+    <ul>
+      <li>Solved 191+ Data Structure and Algorithm problems on GeeksforGeeks</li>
+      <li>Participated in beginner-level CTF challenges on PicoCTF and CyberTalents</li>
+    </ul>
+  </section>
+
+  <!-- OPEN SOURCE -->
+  <section>
+    <h2>Open Source Contributions</h2>
+    <p>
+      Actively maintain project repositories on GitHub, focusing on security tools and
+      programming fundamentals. Open to contributing to collaborative cybersecurity
+      and open-source initiatives.
+    </p>
+  </section>
+
+  <!-- BLOG / RESEARCH -->
+  <section>
+    <h2>Blog, Technical Writing & Research</h2>
+    <p>
+      Currently exploring technical blogging on cybersecurity fundamentals, ethical hacking,
+      and system security concepts. Interested in future research work and publications
+      related to secure computing.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+  <h2>Contact Information</h2>
+  <p><strong>Email:</strong>
+    <a href="mailto:prakhi06032005@gmail.com">
+      prakhi06032005@gmail.com
+    </a>
+  </p>
+
+  <p><strong>Phone:</strong>
+    <a href="tel:+919302018251">
+      +91-9302018251
+    </a>
+  </p>
+
+ </section>
+
+
+  <footer>
+    <p>© 2026 Prakhi Asati | Cybersecurity Student Portfolio</p>
+  </footer>
+
+</body>
+</html>
